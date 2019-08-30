@@ -1,20 +1,16 @@
-import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet } from 'react-native';
 
-export class Profile extends React.Component {
-
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>We have no friends!</Text>
-      </View>
-    )
-  }
-}
 const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'cover',
+    height: '100%',
+    width: '100%',
+    marginTop: 0,
+  },
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: 'teal',
   },
   centered: {
     alignItems: 'center',
@@ -39,7 +35,18 @@ const styles = StyleSheet.create({
   },
   deleteAllButton: {
     marginRight: 40
+  },
+  landingHeading: {
+    color: 'white',
+    fontSize: 40,
+    fontWeight: 'bold'
+  },
+  orderBtn: {
+    color: '#483fc4',
+  },
+  signUpBtn: {
+    backgroundColor: '#483fc4',
   }
 });
 
-export default Profile;
+export default styles;
