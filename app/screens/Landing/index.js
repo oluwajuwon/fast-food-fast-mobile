@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button, View, Text, ImageBackground, StatusBar, TouchableOpacity } from 'react-native';
+import { View, Text, ImageBackground, StatusBar, TouchableOpacity } from 'react-native';
 import styles from './style';
+import Button from '../../components/Button';
 
 export class Landing extends React.Component {
 
@@ -11,14 +12,20 @@ export class Landing extends React.Component {
       <ImageBackground source={{ uri: landingBg }} style={styles.backgroundImage}>
         <View>
           <StatusBar hidden="true" />
-          <Text h1 style={styles.landingHeading}>Welcome to Fast-Food-Fast</Text>
-          <Text>
-          Your number one food ordering platform.
+          <View style={styles.mainContent}>
+            <Text h1 style={styles.landingHeading}>Welcome to {"\n"} Fast-Food-Fast</Text>
+            <Text style={styles.landingText}>
+              Your number one food ordering platform.
+              {"\n"}
+              FFF is an application where customers can place order for meals daily and get it delivered to them in a Split Second
+            </Text>
 
-          FFF is an application where customers can place order for meals daily and get it delivered to them in a Split Second
-          </Text>
-          <Button title="Order Now" color="#483fc4" />
-          <Button title="Sign up Now" color="#483fc4" />
+            <View style={styles.btnContainer}>
+              <Button btnText="Order Now" style={styles.orderBtn}/>
+              <Button btnText="Sign up Now" style={styles.signUpBtn}/>
+            </View>
+          </View>
+          
         </View>
       </ImageBackground>
     )

@@ -5,7 +5,12 @@ import Landing from '../screens/Landing';
 
 
 const navigator = createStackNavigator({
-  LandingPage: { screen: Landing },
+  LandingPage: { screen: Landing,
+    navigationOptions: {
+      header:null,
+      tabBarVisible: false,
+    },
+  },
   Home: { screen: Home },
   Profile: { screen: Profile },
 });

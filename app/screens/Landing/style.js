@@ -8,45 +8,37 @@ const styles = StyleSheet.create({
     width: '100%',
     marginTop: 0,
   },
-  container: {
-    flex: 1,
-    backgroundColor: 'teal',
-  },
-  centered: {
-    alignItems: 'center',
-  },
-  inputContainer: {
-    marginTop: 40,
-    paddingLeft: 15
-  },
-  list: {
-    flex: 1,
-    marginTop: 70,
-    paddingLeft: 15,
-    marginBottom: 10,
-  },
-  scrollableList: {
-    marginTop: 15
-  },
-  column: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between'
-  },
-  deleteAllButton: {
-    marginRight: 40
+  mainContent: {
+    marginTop: 150,
+    padding: 15,
   },
   landingHeading: {
     color: 'white',
     fontSize: 40,
     fontWeight: 'bold'
   },
+  landingText: {
+    color: 'white'
+  },
   orderBtn: {
-    color: '#483fc4',
+    backgroundColor: '#483fc4',
+    color: 'white',
+    height: 100,
+    // width: 150,
   },
   signUpBtn: {
-    backgroundColor: '#483fc4',
-  }
+    backgroundColor: '#0dd160',
+    color: 'white',
+    height: 100,
+    // width: 150,
+  },
+  btnContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 10,
+    width: '50%',
+  },
 });
 
 export default styles;
