@@ -3,6 +3,7 @@ import Home from '../screens/Home';
 import Profile from '../screens/Profile';
 import Landing from '../screens/Landing';
 import Signup from '../screens/Signup';
+import Login from '../screens/Login';
 
 
 const navigator = createStackNavigator({
@@ -15,6 +16,12 @@ const navigator = createStackNavigator({
   Home: { screen: Home },
   Profile: { screen: Profile },
   Signup: { screen: Signup,
+    navigationOptions: {
+      header:null,
+      tabBarVisible: false,
+    },
+  },
+  Login: { screen: Login,
     navigationOptions: {
       header:null,
       tabBarVisible: false,
