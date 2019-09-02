@@ -5,6 +5,10 @@ import Button from '../../components/Button';
 
 export class Landing extends React.Component {
 
+  signupNavigate = () => {
+    this.props.navigation.navigate('Signup');
+  }
+
   render() {
     const landingBg = 'https://github.com/oluwajuwon/Fast-Food-Fast-Frontend/blob/develop/public/images/index-bg.jpg?raw=true';
 
@@ -22,7 +26,7 @@ export class Landing extends React.Component {
 
             <View style={styles.btnContainer}>
               <Button btnText="Order Now" style={styles.orderBtn}/>
-              <Button btnText="Sign up Now" style={styles.signUpBtn}/>
+              <Button btnText="Sign up Now" style={styles.signUpBtn} onBtnClick={this.signupNavigate}/>
             </View>
           </View>
           
