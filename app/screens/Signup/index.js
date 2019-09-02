@@ -5,6 +5,9 @@ import Button from '../../components/Button';
 
 export class Signup extends React.Component {
 
+  loginNavigate = () => {
+    this.props.navigation.navigate('Login');
+  }
   render() {
 
     return (
@@ -15,7 +18,7 @@ export class Signup extends React.Component {
         <TextInput style={styles.textInput} placeholder="Email"/>
         <TextInput style={styles.textInput} placeholder="Password"/>
         <TextInput style={styles.textInput} placeholder="Confirm Password"/>
-        <Text style={styles.loginLink}>Already have an account?</Text>
+        <Text style={styles.loginLink} onPress={this.loginNavigate}>Already have an account?</Text>
         <View style={styles.btnContainer}>
           <Button btnText="Sign up" style={styles.signUpBtn} />
         </View>
