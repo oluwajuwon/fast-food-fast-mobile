@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
+    padding: 15,
     flex: 1,
     backgroundColor: 'white',
   },
@@ -28,7 +29,21 @@ const styles = StyleSheet.create({
   },
   deleteAllButton: {
     marginRight: 40
-  }
+  },
+  actions: {
+    flex: 2,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '70%',
+  },
+  actionBtn: {
+    backgroundColor: '#483fc4',
+    color: 'white',
+    marginTop: 10,
+    justifyContent: 'center',
+    height: 35,
+
+  },
 });
 
 export default styles;
