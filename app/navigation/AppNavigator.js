@@ -4,6 +4,7 @@ import Profile from '../screens/Profile';
 import Landing from '../screens/Landing';
 import Signup from '../screens/Signup';
 import Login from '../screens/Login';
+import OrderHistory from '../screens/OrderHistory';
 
 
 const navigator = createStackNavigator({
@@ -31,6 +32,13 @@ const navigator = createStackNavigator({
     navigationOptions: {
       header:null,
       tabBarVisible: false,
+    },
+  },
+  OrderHistory: { screen: OrderHistory,
+    navigationOptions: {
+      headerLeft: null,
+      title: 'My Orders',
+      gesturesEnabled: true,
     },
   },
 });
