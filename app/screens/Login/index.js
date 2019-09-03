@@ -9,6 +9,10 @@ export class Login extends React.Component {
     this.props.navigation.navigate('Signup');
   }
 
+  homeNavigate = () => {
+    this.props.navigation.navigate('Home');
+  }
+
   render() {
     return (
       <ScrollView style={styles.loginView}>
@@ -18,7 +22,7 @@ export class Login extends React.Component {
         <Text style={styles.signupLink}>Forgot password</Text>
         <Text style={styles.signupLink} onPress={this.signupNavigate}>Don't have an account? Signup</Text>
         <View style={styles.btnContainer}>
-          <Button btnText="Login" style={styles.loginBtn} />
+          <Button btnText="Login" style={styles.loginBtn} onBtnClick={this.homeNavigate} />
         </View>
       </ScrollView>
     );
