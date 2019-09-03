@@ -9,15 +9,21 @@ import Login from '../screens/Login';
 const navigator = createStackNavigator({
   LandingPage: { screen: Landing,
     navigationOptions: {
-      header:null,
+      header: null,
       tabBarVisible: false,
     },
   },
-  Home: { screen: Home },
+  Home: { screen: Home,
+    navigationOptions: {
+      headerLeft: null,
+      title: 'All menu items',
+      gesturesEnabled: false,
+    },
+  },
   Profile: { screen: Profile },
   Signup: { screen: Signup,
     navigationOptions: {
-      header:null,
+      header: null,
       tabBarVisible: false,
     },
   },
