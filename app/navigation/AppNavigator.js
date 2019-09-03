@@ -21,7 +21,13 @@ const navigator = createStackNavigator({
       gesturesEnabled: false,
     },
   },
-  Profile: { screen: Profile },
+  Profile: { screen: Profile,
+    navigationOptions: {
+      headerLeft: null,
+      title: 'My Profile',
+      gesturesEnabled: true,
+    },
+  },
   Signup: { screen: Signup,
     navigationOptions: {
       header: null,
