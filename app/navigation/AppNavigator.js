@@ -1,4 +1,5 @@
 import { createStackNavigator, createAppContainer } from 'react-navigation';
+import tabNavigation from './TabNavigator';
 import Home from '../screens/Home';
 import Profile from '../screens/Profile';
 import Landing from '../screens/Landing';
@@ -12,20 +13,6 @@ const navigator = createStackNavigator({
     navigationOptions: {
       header: null,
       tabBarVisible: false,
-    },
-  },
-  Home: { screen: Home,
-    navigationOptions: {
-      headerLeft: null,
-      title: 'All menu items',
-      gesturesEnabled: false,
-    },
-  },
-  Profile: { screen: Profile,
-    navigationOptions: {
-      headerLeft: null,
-      title: 'My Profile',
-      gesturesEnabled: true,
     },
   },
   Signup: { screen: Signup,
@@ -45,6 +32,12 @@ const navigator = createStackNavigator({
       headerLeft: null,
       title: 'My Orders',
       gesturesEnabled: true,
+    },
+  },
+  Home: { screen: tabNavigation,
+    navigationOptions: {
+      header: null,
+      gesturesEnabled: false,
     },
   },
 });
