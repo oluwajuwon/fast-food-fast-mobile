@@ -28,17 +28,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between'
   },
-  deleteAllButton: {
-    marginRight: 40
-  },
   menuImgContainer: {
     borderRadius: 5,
     height: 150,
     width: 150,
     backgroundColor: '#cccccc'
   },
-  addToCartBtn: {
-    backgroundColor: '#483fc4',
+  deleteOrderBtn: {
+    backgroundColor: '#ca2c1c',
     color: 'white',
     marginTop: 10,
     height: 40,
