@@ -10,7 +10,7 @@ export class Login extends React.Component {
   }
 
   homeNavigate = () => {
-    this.props.navigation.navigate('Profile');
+    this.props.navigation.navigate('Home');
   }
 
   render() {
