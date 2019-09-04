@@ -10,10 +10,12 @@
   },
   "jest": {
     "preset": "react-native",
-    "setupFilesAfterEnv": ["jest-enzyme"],
+    "setupFilesAfterEnv": [
+      "jest-enzyme"
+    ],
     "testEnvironment": "enzyme",
     "testEnvironmentOptions": {
-        "enzymeAdapter": "react16"
+      "enzymeAdapter": "react16"
     }
   },
   "dependencies": {
@@ -27,7 +29,11 @@
     "react-native-vector-icons": "^6.6.0",
     "react-native-web": "^0.11.4",
     "react-navigation": "^3.12.0",
-    "react-navigation-tabs": "^2.3.0"
+    "react-navigation-tabs": "^2.3.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "redux-promise": "^0.6.0",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "babel-preset-expo": "^6.0.0",
