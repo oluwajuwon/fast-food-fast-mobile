@@ -1,11 +1,16 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from "react-navigation";
+import { Provider } from 'react-redux';
+import store from './app/store';
 import AppNavigator from './app/navigation/AppNavigator';
+
 
 export default function App() {
   return (
-    <AppNavigator/>
+    <Provider store={store}>
+      <AppNavigator/>
+    </Provider>
   );
 }
 

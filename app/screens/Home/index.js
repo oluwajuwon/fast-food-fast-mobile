@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text, Image, ScrollView, FlatList } from 'react-native';
+import { connect } from 'react-redux';
 import styles from './style';
 import Button from '../../components/Button';
 
@@ -54,5 +55,12 @@ export class Home extends React.Component {
     )
   }
 }
+const mapStateToProps = (state) => ({
+  state
+});
 
-export default Home;
+const mapDispatchToProps = (dispatch) => ({
+  dispatch
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
