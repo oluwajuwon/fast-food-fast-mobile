@@ -5,7 +5,7 @@ import { shallow } from 'enzyme';
 
 import { Home } from './index';
 
-describe('Card component', () => {
+describe('Home Screen', () => {
   it('should render correctly', () => {
     const wrapper = shallow(<Home />);
 
