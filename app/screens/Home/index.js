@@ -5,8 +5,19 @@ import styles from './style';
 import Button from '../../components/Button';
 
 export class Home extends React.Component {
+
   orderHistoryNavigate = () => {
     this.props.navigation.navigate('OrderHistory');
+  }
+
+  renderModal = () => {
+    return(
+      <Modal>
+        <View>
+          <Text>Added to cart</Text>
+        </View>
+      </Modal>
+    );
   }
 
   renderGridItem = () => {
@@ -35,7 +46,6 @@ export class Home extends React.Component {
           <Text style={styles.itemText}>Category: meals</Text>
           <Button btnText="Add to Cart" style={styles.addToCartBtn} onBtnClick={this.orderHistoryNavigate}/>
         </View>
-
       </View>
     );
   }
