@@ -1,36 +1,42 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'contain',
+    height: '100%',
+    width: '100%',
+    marginTop: 0,
+  },
   loginView: {
     padding: 20,
-    marginTop: 50
+    marginTop: 100,
   },
   loginHeader: {
     fontSize: 30,
-    fontWeight: 'bold',
+    fontWeight: '400',
     textAlign: 'center',
   },
   textInput: {
     height: 40,
-    borderColor: 'gray',
-    borderWidth: 1,
-    borderRadius: 5,
+    borderBottomColor: '#cccccc',
+    borderBottomWidth: 1,
     marginTop: 10,
     padding: 10
   },
   btnContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     marginTop: 10,
-    width: '50%',
+    width: '100%',
   },
   loginBtn: {
-    backgroundColor: '#483fc4',
+    backgroundColor: '#0080FF',
     color: 'white',
-    marginTop: 10,
-    justifyContent: 'center',
-    height: 100,
+    marginTop: 20,
+    alignItems: 'center',
+    height: 40,
+    width: '100%',
+    flex: 2,
   },
   signupLink: {
     marginTop: 10,
