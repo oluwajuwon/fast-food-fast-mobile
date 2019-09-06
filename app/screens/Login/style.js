@@ -36,10 +36,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     height: 40,
     width: '100%',
-    flex: 2,
   },
   signupLink: {
-    marginTop: 10,
+    marginTop: 15,
   }
 });
 
