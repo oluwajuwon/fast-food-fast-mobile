@@ -1,6 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    resizeMode: 'contain',
+    height: '100%',
+    width: '100%',
+    marginTop: 0,
+  },
   signupView: {
     padding: 20,
     marginTop: 50
@@ -12,9 +19,8 @@ const styles = StyleSheet.create({
   },
   textInput: {
     height: 40,
-    borderColor: 'gray',
-    borderWidth: 1,
-    borderRadius: 5,
+    borderBottomColor: '#cccccc',
+    borderBottomWidth: 1,
     marginTop: 10,
     padding: 10
   },
@@ -23,17 +29,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginTop: 10,
-    width: '50%',
+    width: '100%',
   },
   signUpBtn: {
-    backgroundColor: '#483fc4',
+    backgroundColor: '#0080FF',
     color: 'white',
-    marginTop: 10,
-    justifyContent: 'center',
-    height: 100,
+    marginTop: 20,
+    alignItems: 'center',
+    height: 40,
+    width: '100%',
   },
   loginLink: {
-    marginTop: 10,
+    marginTop: 15,
   }
 });
 
